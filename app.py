@@ -1,4 +1,14 @@
 import os
+import sys
+import tempfile
+import argparse
+from flask import Flask, render_template, request, send_file
+
+# सिस्टम पाथ सेट करें ताकि processor.py मिल जाए
+sys.path.insert(1, os.path.join(os.path.dirname(__file__), 'image_postprocess'))
+from processor import process_image
+
+app = Flask(__name__)
 import tempfile
 import argparse
 from flask import Flask, render_template, request, send_file
