@@ -1,5 +1,5 @@
 import os
-import sys
+from image_postprocess.processor import process_image
 import tempfile
 import argparse
 from flask import Flask, render_template, request, send_file
