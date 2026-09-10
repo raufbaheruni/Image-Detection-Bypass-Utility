@@ -3,7 +3,7 @@ import tempfile
 import argparse
 from flask import Flask, render_template, request, send_file
 # इस रिपॉजिटरी का अपना फंक्शन इम्पोर्ट कर रहे हैं
-from processor import process_image
+from image_postprocess.processor import process_image
 
 app = Flask(__name__)
 
